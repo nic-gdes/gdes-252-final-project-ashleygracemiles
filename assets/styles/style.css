@@ -27,7 +27,7 @@ img {
 header {
     background: rgb(30, 64, 107);
     background: linear-gradient(180deg, rgba(30, 64, 107, 1) 0%, rgba(35, 72, 118, 1) 100%);
-    width: 100vw;
+    width: 100%;
     height: fit-content;
     color: #fff;
     padding: 2rem;
@@ -55,6 +55,11 @@ header img {
     background-color: var(--yellow);
     width: fit-content;
     border-radius: 2rem;
+    margin-top: .75rem;
+}
+
+.fa-bars {
+    color: #fff;
 }
 
 .nav {
@@ -62,12 +67,46 @@ header img {
     align-items: center;
 }
 
-.nav-menu {
+#nav-menu {
+    background-color: var(--blue);
+    z-index: 999;
     display: none;
+    opacity: 0;
+    transform: translateY(-100%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    transition: all 0.3s ease;
+}
+
+#nav-menu.open {
+    display: flex;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#nav-menu li a {
+    font-size: 1.5rem;
+
+}
+
+.close-button {
+    cursor: pointer;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    z-index: 999;
 }
 
 .hero-home {
-    height: 60vh;
+    height: 50vh;
     padding: 4rem;
     align-items: center;
     background-image: url('../images/solutions.jpg');
@@ -78,7 +117,7 @@ header img {
 }
 
 .hero-home h1 {
-    font-size: 3rem;
+    font-size: 2.25rem;
     text-align: center;
     color: #fff;
     text-shadow: 0 0 30px rgba(0, 0, 0, 0.50);
@@ -161,6 +200,13 @@ header img {
 
 .shaping-tomorrow p {
     font-size: 1.25rem;
+    line-height: 1.5;
+}
+
+.tomorrow-btn {
+    background-color: var(--blue);
+    color: #fff;
+    margin-top: .75rem;
 }
 
 .contact-us-home {
@@ -171,10 +217,23 @@ header img {
     font-size: 2rem;
 }
 
-footer {
+.contact-us-home p {
+    font-size: 1.25rem;
+    line-height: 1.5;
+}
+
+.contact-btn {
+    margin-top: .75rem;
+}
+
+#footer-style {
     background-color: var(--blue);
-    padding: 3rem 4rem;
+    padding: 3rem;
     color: #fff;
     justify-content: space-between;
     align-items: center;
+}
+
+.footer-links {
+    color: #fff;
 }
