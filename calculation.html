@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Imaginary Solutions Inc.</title>
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="shortcut icon" href="assets/images/IS-favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- header and nav -->
+    <header>
+        <nav class="nav flex">
+            <div>
+                <img src="./assets/images/IS-horizontal-logo.png" alt="imaginary solutions horizontal logo">
+            </div>
+            <div class="hamburger-icon" onclick="toggleMenu()" role="button">
+                <i class="fa-solid fa-bars fa-2x"></i>
+            </div>
+            <ul id="nav-menu">
+                <i class="close-button fa-solid fa-xmark fa-2x" role="button"></i>
+                <li class="header-item"><a href="/index.html">Home</a></li>
+                <li class="header-item"><a href="/calculation.html">Calculator</a></li>
+                <li class="header-item"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- calculation tool welcome -->
+
+    <section class="calc-welcome flex column">
+        <h1>Welcome to InnoCalc!</h1>
+        <p>InnoCalc is an innovative tool designed to tackle everyday challenges through a creative lens.
+            Although it specializes in a select range of conversions, it brings an imaginative touch to
+            these essential transformations.</p>
+    </section>
+
+    <!-- calculation tool -->
+
+    <section class="calculator flex column">
+        <h2>Enter Your Value:</h2>
+        <input type="number" id="input-value" placeholder="Enter your value">
+
+        <h2>Select Your Conversion:</h2>
+        <select name="calculation-tool" id="conversion-type">
+            <option value="fahrenheit_to_celsius">Fahrenheit to Celsius</option>
+            <option value="feet_to_miles">Feet to Miles</option>
+            <option value="inches_to_centimeters">Inches to Centimeters</option>
+        </select>
+
+        <button id="calculate-button" class="btn-style">Generate Your Imaginative Result</button>
+
+        <h2>Your Result:</h2>
+        <div id="result"></div>
+    </section>
+
+    <!-- footer -->
+    <footer id="footer-style" class="flex">
+        <div>
+            <ul class="footer-links">
+                <li class="footer-item"><a href="#">Home</a></li>
+                <li class="footer-item"><a href="#">Calculator</a></li>
+                <li class="footer-item"><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Let's Connect</h4>
+            <ul class="social flex">
+                <li class="footer-item"><a href="#"><img src="./assets/images/icons8-facebook.svg"
+                            alt="facebook icon"></a></li>
+                <li class="footer-item"><a href="#"><img src="./assets/images/icons8-instagram.svg"
+                            alt="instagram icon"></a></li>
+                <li class="footer-item"><a href="#"><img src="./assets/images/icons8-twitterx.svg"
+                            alt="twitterX icon"></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/2affe2957c.js" crossorigin="anonymous"></script>
+    <script src="/assets/scripts/script.js"></script>
+</body>
+
+</html>
