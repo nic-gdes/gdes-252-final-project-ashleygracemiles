@@ -63,6 +63,10 @@ header img {
     margin-top: .75rem;
 }
 
+.btn-style:active {
+    transform: translateY(2px);
+}
+
 .fa-bars {
     color: #fff;
 }
@@ -256,6 +260,7 @@ header img {
 
 .calculator h2 {
     font-size: 1.5rem;
+    text-align: center;
 }
 
 .calculator input {
@@ -272,4 +277,5 @@ header img {
 
 #calculate-button {
     font-size: 1rem;
+    cursor: pointer;
 }
