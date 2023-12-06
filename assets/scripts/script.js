@@ -34,24 +34,28 @@ function performConversion() {
     // Get the conversion type based on the selected option
     var conversionType = document.getElementById('conversion-type').value;
 
-    // Variable to store the result
+    // Variable to store the result and set the unit
     var result;
+    var unit;
 
     // Determine which conversion to perform
     switch (conversionType) {
         case 'fahrenheit_to_celsius':
             result = fahrenheitToCelsius(inputValue);
+            unit = ' °C';
             break;
         case 'feet_to_miles':
             result = feetToMiles(inputValue);
+            unit = ' miles';
             break;
         case 'inches_to_centimeters':
             result = inchesToCentimeters(inputValue);
+            unit = ' cm';
             break;
     }
 
-    // Display the result with two decimal places
-    document.getElementById('result').innerText = result.toFixed(2);
+    // Display the result with two decimal places and the unit based on the selection
+    document.getElementById('result').innerText = result.toFixed(2) + unit;
 }
 
 document.getElementById('calculate-button').addEventListener('click', performConversion);
