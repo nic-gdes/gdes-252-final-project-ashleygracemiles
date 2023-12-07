@@ -20,7 +20,6 @@ document.querySelector('.close-button').addEventListener('click', function () {
 });
 
 // conversion functions
-
 function fahrenheitToCelsius(fahrenheit) {
     return (fahrenheit - 32) * 5 / 9;
 }
@@ -34,7 +33,6 @@ function inchesToCentimeters(inches) {
 }
 
 // perform conversion calc
-
 function performConversion() {
     // get the input value
     var inputValue = document.getElementById('input-value').value;
@@ -68,8 +66,7 @@ function performConversion() {
 
 document.getElementById('calculate-button').addEventListener('click', performConversion);
 
-// Dark mode
-
+// Dark mode toggle
 function toggleDarkMode() {
     var element = document.body;
     element.classList.toggle('dark-mode');
