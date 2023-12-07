@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Imaginary Solutions Inc.</title>
+    <title>Contact Us | Imaginary Solutions Inc.</title>
     <link rel="stylesheet" href="./assets/styles/style.css">
     <link rel="shortcut icon" href="assets/images/IS-favicon.png" type="image/x-icon">
 </head>
@@ -30,11 +30,17 @@
         </nav>
     </header>
 
-    <div class="contact-form flex column">
-        <h1>Get in Touch with Imaginary Solutions Inc.</h1>
-        <p>We're excited to hear from you! Whether you have a question, want to explore our services
-            further, or just want to say hello, our team is here and ready to assist you.</p>
-        <button type="button" class="btn-style" onclick="openPopup()">Contact Us Today</button>
+    <!-- dark mode button -->
+    <div class="btn-container flex">
+        <button class="btn-style dark-mode-btn" onclick="toggleDarkMode()"">Toggle Dark Mode</button>
+    </div>
+
+    <!-- contact form button -->
+    <div class=" contact-form flex column">
+            <h1>Get in Touch with Imaginary Solutions Inc.</h1>
+            <p>We're excited to hear from you! Whether you have a question, want to explore our services
+                further, or just want to say hello, our team is here and ready to assist you.</p>
+            <button type="button" class="btn-style" onclick="openPopup()">Contact Us Today</button>
     </div>
 
     <div class="container" id="popup">
@@ -51,7 +57,7 @@
             <input type="number" id="phone" name="phone">
 
             <div class="social-modal">
-                <h4>Let's Connect</h4>
+                <h2>Let's Connect</h2>
                 <ul class="flex social-list">
                     <li><a href="#"><img src="./assets/images/icons8-facebook-dark.svg" alt="facebook icon"></a></li>
                     <li><a href="#"><img src="./assets/images/icons8-instagram-dark.svg" alt="instagram icon"></a></li>
@@ -63,6 +69,15 @@
             <p>Thanks for reaching out!</p>
             <button type="button" onclick="closePopup()">Submit</button>
         </div>
+    </div>
+
+    <div class="flex column social-contact">
+        <p>Twitter: @ImaginarySolutions</p>
+        <p>Facebook: /ImaginarySolutionsInc</p>
+        <p>Instagram: @ImaginarySolutionsOfficial</p>
+        <p>Let's Collaborate on Imaginative Endeavors!</p>
+        <h2>Reach out today and embark on an imaginative journey with Imaginary Solutions Inc. Our
+            team is ready to transform your wildest ideas into fantastic, fictional realities.</h2>
     </div>
 
 

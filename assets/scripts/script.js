@@ -1,3 +1,4 @@
+// Modal pop up
 let popup = document.getElementById('popup');
 
 function openPopup() {
@@ -66,3 +67,11 @@ function performConversion() {
 }
 
 document.getElementById('calculate-button').addEventListener('click', performConversion);
+
+// Dark mode
+
+function toggleDarkMode() {
+    var element = document.body;
+    element.classList.toggle('dark-mode');
+}
+
