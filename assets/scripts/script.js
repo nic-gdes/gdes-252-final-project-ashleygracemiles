@@ -8,6 +8,10 @@ function closePopup() {
     popup.classList.remove("open-popup");
 }
 
+function thankYou() {
+    document.getElementById('thanks').innerText = "Thanks for reaching out! We'll be in touch soon.";
+}
+
 // nav menu
 function toggleMenu() {
     var menu = document.getElementById("nav-menu");
