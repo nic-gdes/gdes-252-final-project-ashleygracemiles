@@ -64,6 +64,7 @@ function performConversion() {
     document.getElementById('result').innerText = result.toFixed(2) + unit;
 }
 
+// calculate button
 document.getElementById('calculate-button').addEventListener('click', performConversion);
 
 // Dark mode toggle
