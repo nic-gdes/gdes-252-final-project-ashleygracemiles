@@ -19,53 +19,29 @@ document.querySelector('.close-button').addEventListener('click', function () {
     menu.classList.remove('open');
 });
 
-// conversion functions
-function fahrenheitToCelsius(fahrenheit) {
-    return (fahrenheit - 32) * 5 / 9;
-}
+function fahrenheitToCelsius() {
+    const fahrenheit = parseInt(document.getElementById('input-value').value);
 
-function feetToMiles(feet) {
-    return feet / 5280;
-}
+    const celsius = (fahrenheit - 32) * 5 / 9;
 
-function inchesToCentimeters(inches) {
-    return inches * 2.54;
-}
+    document.getElementById('result').innerText = celsius.toFixed(2) + ' °C';
+};
 
-// perform conversion calc
-function performConversion() {
-    // get the input value
-    var inputValue = document.getElementById('input-value').value;
+function feetToMiles() {
+    const feet = parseInt(document.getElementById('input-value').value);
 
-    // Get the conversion type based on the selected option
-    var conversionType = document.getElementById('conversion-type').value;
+    const miles = feet / 5280;
 
-    // Variable to store the result and set the unit
-    var result;
-    var unit;
+    document.getElementById('result').innerText = miles.toFixed(2) + ' miles';
+};
 
-    // Determine which conversion to perform
-    switch (conversionType) {
-        case 'fahrenheit_to_celsius':
-            result = fahrenheitToCelsius(inputValue);
-            unit = ' °C';
-            break;
-        case 'feet_to_miles':
-            result = feetToMiles(inputValue);
-            unit = ' miles';
-            break;
-        case 'inches_to_centimeters':
-            result = inchesToCentimeters(inputValue);
-            unit = ' cm';
-            break;
-    }
+function inchesToCentimeters() {
+    const inches = parseInt(document.getElementById('input-value').value);
 
-    // Display the result with two decimal places and the unit based on the selection
-    document.getElementById('result').innerText = result.toFixed(2) + unit;
-}
+    const centimeters = inches * 2.54;
 
-// calculate button
-document.getElementById('calculate-button').addEventListener('click', performConversion);
+    document.getElementById('result').innerText = centimeters.toFixed(2) + ' cm';
+};
 
 // Dark mode toggle
 function toggleDarkMode() {

@@ -23,15 +23,15 @@
             </div>
             <ul id="nav-menu">
                 <i class="close-button fa-solid fa-xmark fa-2x" role="button"></i>
-                <li class="header-item"><a href="index.html">Home</a></li>
-                <li class="header-item"><a href="calculation.html">Calculator</a></li>
-                <li class="header-item"><a href="contact.html">Contact</a></li>
+                <li class="header-item"><a href="./index.html">Home</a></li>
+                <li class="header-item"><a href="./calculation.html">Calculator</a></li>
+                <li class="header-item"><a href="./contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- dark mode button -->
-    <div class="btn-container flex">
+    <div class="toggle-btn-container flex">
         <button class="btn-style dark-mode-btn" onclick="toggleDarkMode()"">Toggle Dark Mode</button>
     </div>
 
@@ -45,6 +45,7 @@
 
     <div class="container" id="popup">
         <div class="popup">
+            <i class="fa-solid fa-x fa-2x flex close-btn" onclick="closePopup()"></i>
             <h2>Contact Information</h2>
 
             <label for="name" class="form-label">Name</label>
@@ -57,17 +58,21 @@
             <input type="number" id="phone" name="phone">
 
             <div class="social-modal">
+
                 <h2>Let's Connect</h2>
                 <ul class="flex social-list">
-                    <li><a href="#"><img src="./assets/images/icons8-facebook-dark.svg" alt="facebook icon"></a></li>
-                    <li><a href="#"><img src="./assets/images/icons8-instagram-dark.svg" alt="instagram icon"></a></li>
-                    <li><a href="#"><img src="./assets/images/icons8-twitterx-dark.svg" alt="twitterX icon"></a></li>
+                    <li><a href="https://www.facebook.com/" target="_blank"><img
+                                src="./assets/images/icons8-facebook-dark.svg" alt="facebook icon"></a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank"><img
+                                src="./assets/images/icons8-instagram-dark.svg" alt="instagram icon"></a></li>
+                    <li><a href="https://www.twitter.com/" target="_blank"><img
+                                src="./assets/images/icons8-twitterx-dark.svg" alt="twitterX icon"></a></li>
                 </ul>
             </div>
 
             <!-- "submit" button -->
             <p>Thanks for reaching out!</p>
-            <button type="button" onclick="closePopup()">Submit</button>
+            <button type="submit">Submit</button>
         </div>
     </div>
 
@@ -81,7 +86,6 @@
             team is ready to transform your wildest ideas into fantastic, fictional realities.</h2>
     </div>
 
-
     <!-- footer -->
     <footer id="footer-style">
         <div class="links flex">
@@ -94,19 +98,20 @@
             </div>
             <div class="social">
                 <h4>Let's Connect</h4>
-                <ul class="flex">
-                    <li class="footer-item"><a href="#"><img src="./assets/images/icons8-facebook.svg"
-                                alt="facebook icon"></a></li>
-                    <li class="footer-item"><a href="#"><img src="./assets/images/icons8-instagram.svg"
-                                alt="instagram icon"></a></li>
-                    <li class="footer-item"><a href="#"><img src="./assets/images/icons8-twitterx.svg"
-                                alt="twitterX icon"></a></li>
+                <ul class="flex footer-list">
+                    <li class="footer-item"><a href="https://www.facebook.com" target="_blank"><img
+                                src="./assets/images/icons8-facebook.svg" alt="facebook icon"></a></li>
+                    <li class="footer-item"><a href="https://www.instagram.com/" target="_blank"><img
+                                src="./assets/images/icons8-instagram.svg" alt="instagram icon"></a></li>
+                    <li class="footer-item"><a href="https://twitter.com/" target="_blank"><img
+                                src="./assets/images/icons8-twitterx.svg" alt="twitterX icon"></a></li>
                 </ul>
             </div>
         </div>
         <div class="copyright flex column">
             <h5>©Imaginary Solutions 2023</h5>
-            <img src="./assets/images/IS-icon-white.png" alt="imaginary solutions icon white" class="footer-img">
+            <a href="./index.html"><img src="./assets/images/IS-icon-white.png" alt="imaginary solutions icon white"
+                    class="footer-img"></a>
         </div>
     </footer>
 

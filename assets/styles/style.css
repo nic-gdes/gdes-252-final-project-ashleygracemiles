@@ -76,7 +76,7 @@ header img {
     transform: translateY(2px);
 }
 
-.btn-container {
+.toggle-btn-container {
     justify-content: flex-end;
     padding: 3rem 3rem 0 3rem;
 }
@@ -111,6 +111,7 @@ header img {
     text-align: center;
     gap: 2rem;
     transition: opacity 0.5s ease, transform 0.5s ease;
+    z-index: 999;
 }
 
 #nav-menu li a {
@@ -165,9 +166,17 @@ header img {
 }
 
 .about-us-img {
-    margin-top: 2rem;
+    margin-top: 1rem;
+    width: 90%;
+    max-width: 400px;
+}
+
+.about-us-img img {
     border-radius: 1rem;
-    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 .our-approach {
@@ -190,8 +199,14 @@ header img {
 
 .our-approach-img {
     margin-top: 2rem;
+    width: 90%;
+    max-width: 400px;
+}
+
+.our-approach img {
     border-radius: 1rem;
-    max-width: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 .services {
@@ -211,7 +226,7 @@ header img {
 }
 
 .shaping-tomorrow {
-    color: var(--dark-grey);
+    color: #000;
     background-color: var(--light-yellow);
 }
 
@@ -297,7 +312,7 @@ header img {
 
 /* Calc Page */
 .calc-welcome {
-    padding-top: 1rem;
+    padding-top: 3rem;
     animation: scale-in 3s;
 }
 
@@ -306,8 +321,9 @@ header img {
 }
 
 .calculator {
-    padding: 0 3rem 3rem 3rem;
+    padding: 0 3rem 5rem 3rem;
     align-items: center;
+    gap: 2rem;
 }
 
 .calculator h2 {
@@ -321,15 +337,25 @@ header img {
     border: 2px solid var(--grey);
 }
 
-.calculator select {
-    padding: 1rem;
-    border-radius: 1rem;
-    border: 2px solid var(--grey);
+.calc-btn-container {
+    flex-direction: column;
+    gap: 1rem;
 }
 
-#calculate-button {
+.calc-btn {
+    background-color: var(--yellow);
+    color: #000;
+    font-weight: 600;
+    border: none;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 1rem;
     font-size: 1rem;
     cursor: pointer;
+}
+
+#result {
+    font-size: 1.5rem;
 }
 
 /* contact page */
@@ -405,6 +431,10 @@ header img {
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
 }
 
+.popup :first-child {
+    text-align: right
+}
+
 .form-label {
     font-size: 1.25rem;
 }
@@ -415,6 +445,8 @@ header img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
 }
 
 .social-list {
@@ -519,16 +551,17 @@ header img {
         height: 70vh;
     }
 
-    .close-button {
-        opacity: 0;
-    }
-
     .div-padding {
         padding: 6rem 10rem 6rem 10rem;
     }
 
     .calculator {
         padding: 0rem 10rem 10rem 10rem;
+    }
+
+    .calc-btn-container {
+        flex-direction: row;
+        gap: 3rem;
     }
 
     #footer-style {

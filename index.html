@@ -23,9 +23,9 @@
             </div>
             <ul id="nav-menu">
                 <i class="close-button fa-solid fa-xmark fa-2x" role="button"></i>
-                <li class="header-item"><a href="index.html">Home</a></li>
-                <li class="header-item"><a href="calculation.html">Calculator</a></li>
-                <li class="header-item"><a href="contact.html">Contact</a></li>
+                <li class="header-item"><a href="./index.html">Home</a></li>
+                <li class="header-item"><a href="./calculation.html">Calculator</a></li>
+                <li class="header-item"><a href="./contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -36,7 +36,7 @@
     </section>
 
     <!-- dark mode button -->
-    <div class="btn-container flex">
+    <div class="toggle-btn-container flex">
         <button class="btn-style dark-mode-btn" onclick="toggleDarkMode()"">Toggle Dark Mode</button>
     </div>
 
@@ -51,8 +51,9 @@
                 trailblazing service company dedicated to delivering imaginative and futuristic solutions. Our
                 team of visionaries and dreamers strives to revolutionize problem-solving through innovative
                 thinking and limitless imagination.</p>
-            <img src="./assets/images/computer-1.jpeg" alt="man typing on a computer" class="about-us-img">
-
+            <div class="about-us-img">
+                <img src="./assets/images/computer-1.jpeg" alt="man typing on a computer" class="about-us-img">
+            </div>
             </section>
 
             <!-- our approach section -->
@@ -61,7 +62,10 @@
                 <p>Embracing the unconventional, we redefine problem-solving by creating entirely fictional yet
                     awe-inspiring solutions tailored to your needs. From whimsical concepts to futuristic
                     innovations, we're committed to offering imaginative alternatives that transcend the ordinary.</p>
-                <img src="./assets/images/approach.jpeg" alt="code on a computer screen" class="our-approach-img">
+                <div class="our-approach-img">
+                    <img src="./assets/images/approach.jpeg" alt="code on a computer screen">
+                </div>
+
             </section>
 
             <!-- services we offer section -->
@@ -91,7 +95,7 @@
                 <p>Are you ready to explore the limitless potential of imagination? Join us on a journey where
                     creativity knows no bounds. Let's shape a future where the only limit is the extent of our
                     imagination.</p>
-                <a href="#" class="btn-style tomorrow-btn">Join Us</a>
+                <a href="./contact.html" class="btn-style tomorrow-btn">Join Us</a>
             </section>
 
             <!-- contact us section -->
@@ -99,7 +103,7 @@
                 <h2>Contact Us</h2>
                 <p>Ready to embark on an imaginative adventure? Reach out to us today to discover how
                     Imaginary Solutions Inc. can turn your imaginative dreams into fictional realities.</p>
-                <a href="#" class="btn-style contact-btn">Let's Chat</a>
+                <a href="./contact.html" class="btn-style contact-btn">Let's Chat</a>
             </section>
 
             <!-- footer -->
@@ -114,20 +118,20 @@
                     </div>
                     <div class="social">
                         <h4>Let's Connect</h4>
-                        <ul class="flex">
-                            <li class="footer-item"><a href="#"><img src="./assets/images/icons8-facebook.svg"
-                                        alt="facebook icon"></a></li>
-                            <li class="footer-item"><a href="#"><img src="./assets/images/icons8-instagram.svg"
-                                        alt="instagram icon"></a></li>
-                            <li class="footer-item"><a href="#"><img src="./assets/images/icons8-twitterx.svg"
-                                        alt="twitterX icon"></a></li>
+                        <ul class="flex footer-list">
+                            <li class="footer-item"><a href="https://www.facebook.com" target="_blank"><img
+                                        src="./assets/images/icons8-facebook.svg" alt="facebook icon"></a></li>
+                            <li class="footer-item"><a href="https://www.instagram.com/" target="_blank"><img
+                                        src="./assets/images/icons8-instagram.svg" alt="instagram icon"></a></li>
+                            <li class="footer-item"><a href="https://twitter.com/" target="_blank"><img
+                                        src="./assets/images/icons8-twitterx.svg" alt="twitterX icon"></a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="copyright flex column">
                     <h5>©Imaginary Solutions 2023</h5>
-                    <img src="./assets/images/IS-icon-white.png" alt="imaginary solutions icon white"
-                        class="footer-img">
+                    <a href="./index.html"><img src="./assets/images/IS-icon-white.png"
+                            alt="imaginary solutions icon white" class="footer-img"></a>
                 </div>
             </footer>
 
