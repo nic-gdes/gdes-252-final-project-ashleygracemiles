@@ -57,6 +57,10 @@ header img {
     gap: 1rem;
 }
 
+.div-padding {
+    padding: 3rem;
+}
+
 .btn-style {
     font-size: 1.25rem;
     font-weight: 600;
@@ -145,10 +149,6 @@ header img {
     line-height: 1.5;
 }
 
-.about-us {
-    padding: 3rem;
-}
-
 .about-us :last-child {
     align-self: center;
 }
@@ -169,7 +169,6 @@ header img {
 }
 
 .our-approach {
-    padding: 3rem;
     color: #000;
     background-color: var(--grey);
 }
@@ -194,7 +193,6 @@ header img {
 }
 
 .services {
-    padding: 3rem;
     gap: 0;
 }
 
@@ -211,7 +209,6 @@ header img {
 }
 
 .shaping-tomorrow {
-    padding: 3rem;
     color: var(--dark-grey);
     background-color: var(--light-yellow);
 }
@@ -229,10 +226,6 @@ header img {
     background-color: var(--blue);
     color: #fff;
     margin-top: .75rem;
-}
-
-.contact-us-home {
-    padding: 3rem;
 }
 
 .contact-us-home h2 {
@@ -253,7 +246,6 @@ header img {
     padding: 3rem;
     color: #fff;
     justify-content: space-between;
-    /* align-items: center; */
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -303,7 +295,7 @@ header img {
 
 /* Calc Page */
 .calc-welcome {
-    padding: 3rem;
+    padding-top: 1rem;
 }
 
 .calc-welcome h1 {
@@ -432,4 +424,97 @@ header img {
 .social-contact h2 {
     font-size: 1rem;
     font-weight: 600;
+}
+
+@media (min-width: 750px) {
+    header {
+        padding: 3rem 5rem 3rem 5rem;
+    }
+
+    .btn-container {
+        padding: 3rem 5rem 0 5rem;
+    }
+
+    .dark-mode-btn {
+        font-size: 1rem;
+    }
+
+    .hero-home h1 {
+        font-size: 4rem;
+    }
+
+    .div-padding {
+        padding: 3rem 5rem 3rem 5rem;
+    }
+
+    .calculator {
+        padding: 0rem 5rem 8rem 5rem;
+    }
+
+    #footer-style {
+        padding: 3rem 5rem 3rem 5rem;
+    }
+}
+
+@media (min-width: 900px) {
+    header {
+        padding: 3rem 10rem 3rem 10rem;
+    }
+
+    .btn-container {
+        padding: 3rem 10rem 0 10rem;
+    }
+
+    .dark-mode-btn {
+        font-size: 1rem;
+    }
+
+    .hamburger-icon {
+        opacity: 0;
+        display: hidden;
+        pointer-events: none;
+    }
+
+    .nav {
+        opacity: 1;
+        display: flex;
+    }
+
+    #nav-menu {
+        transform: translateY(0);
+        position: relative;
+        opacity: 1;
+        width: 50vw;
+        display: flex;
+        flex-direction: row;
+        background-color: transparent;
+        justify-content: flex-end;
+        align-items: center;
+        text-align: center;
+        gap: 3rem;
+    }
+
+    #nav-menu li a {
+        font-size: 1.5rem;
+    }
+
+    .hero-home {
+        height: 70vh;
+    }
+
+    .close-button {
+        opacity: 0;
+    }
+
+    .div-padding {
+        padding: 6rem 10rem 6rem 10rem;
+    }
+
+    .calculator {
+        padding: 0rem 10rem 10rem 10rem;
+    }
+
+    #footer-style {
+        padding: 3rem 10rem 3rem 10rem;
+    }
 }
