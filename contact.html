@@ -30,33 +30,41 @@
         </nav>
     </header>
 
-    <!-- calculation tool welcome -->
+    <div class="contact-form flex column">
+        <h1>Get in Touch with Imaginary Solutions Inc.</h1>
+        <p>We're excited to hear from you! Whether you have a question, want to explore our services
+            further, or just want to say hello, our team is here and ready to assist you.</p>
+        <button type="button" class="btn-style" onclick="openPopup()">Contact Us Today</button>
+    </div>
 
-    <section class="calc-welcome flex column">
-        <h1>Welcome to InnoCalc!</h1>
-        <p>InnoCalc is an innovative tool designed to tackle everyday challenges through a creative lens.
-            Although it specializes in a select range of conversions, it brings an imaginative touch to
-            these essential transformations.</p>
-    </section>
+    <div class="container" id="popup">
+        <div class="popup">
+            <h2>Contact Information</h2>
 
-    <!-- calculation tool -->
+            <label for="name" class="form-label">Name</label>
+            <input type="text" id="name" name="name">
 
-    <section class="calculator flex column">
-        <h2>Enter Your Value:</h2>
-        <input type="number" id="input-value" placeholder="Enter your value">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" id="email" name="email">
 
-        <h2>Select Your Conversion:</h2>
-        <select name="calculation-tool" id="conversion-type">
-            <option value="fahrenheit_to_celsius">Fahrenheit to Celsius</option>
-            <option value="feet_to_miles">Feet to Miles</option>
-            <option value="inches_to_centimeters">Inches to Centimeters</option>
-        </select>
+            <label for="phone" class="form-label">Phone Number</label>
+            <input type="number" id="phone" name="phone">
 
-        <button id="calculate-button" class="btn-style">Generate Your Imaginative Result</button>
+            <div class="social-modal">
+                <h4>Let's Connect</h4>
+                <ul class="flex social-list">
+                    <li><a href="#"><img src="./assets/images/icons8-facebook-dark.svg" alt="facebook icon"></a></li>
+                    <li><a href="#"><img src="./assets/images/icons8-instagram-dark.svg" alt="instagram icon"></a></li>
+                    <li><a href="#"><img src="./assets/images/icons8-twitterx-dark.svg" alt="twitterX icon"></a></li>
+                </ul>
+            </div>
 
-        <h2>Your Result:</h2>
-        <div id="result"></div>
-    </section>
+            <!-- "submit" button -->
+            <p>Thanks for reaching out!</p>
+            <button type="button" onclick="closePopup()">Submit</button>
+        </div>
+    </div>
+
 
     <!-- footer -->
     <footer id="footer-style">

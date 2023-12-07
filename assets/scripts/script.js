@@ -1,5 +1,13 @@
-// nav menu
+let popup = document.getElementById('popup');
 
+function openPopup() {
+    popup.classList.add("open-popup");
+}
+function closePopup() {
+    popup.classList.remove("open-popup");
+}
+
+// nav menu
 function toggleMenu() {
     var menu = document.getElementById("nav-menu");
     menu.classList.toggle('open');
@@ -10,7 +18,7 @@ document.querySelector('.close-button').addEventListener('click', function () {
     menu.classList.remove('open');
 });
 
-// conversions
+// conversion functions
 
 function fahrenheitToCelsius(fahrenheit) {
     return (fahrenheit - 32) * 5 / 9;
@@ -27,9 +35,8 @@ function inchesToCentimeters(inches) {
 // perform conversion calc
 
 function performConversion() {
-    // get the input value and make sure it converts to a number value
+    // get the input value
     var inputValue = document.getElementById('input-value').value;
-    inputValue = parseFloat(inputValue);
 
     // Get the conversion type based on the selected option
     var conversionType = document.getElementById('conversion-type').value;
